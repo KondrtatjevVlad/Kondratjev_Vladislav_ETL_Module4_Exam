@@ -1,0 +1,17 @@
+# Large local data files
+data/*.csv
+
+# Secrets and tokens
+iam-token.txt
+*.key
+*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# System files
+.DS_Store
+Thumbs.db
