@@ -21,7 +21,7 @@
 - `yql/01_create_transactions_v2.yql` — создание таблицы YDB.
 - `yql/02_check_transactions_v2.yql` — проверка количества строк.
 - `docs/report_task_1.md` — отчёт по задаче 1.
-- `screenshots/` — скриншоты выполнения.
+- `screenshots` — скриншоты выполнения.
 
 ## Использованные сервисы
 
