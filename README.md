@@ -7,7 +7,7 @@
 ## Что сделано
 
 1. Создана база данных Yandex Database / Managed Service for YDB.
-2. Сгенерирован CSV-файл `transactions_v2.csv` объёмом более 30 МБ.
+2. Сгенерирован CSV-файл `transactions_v2.csv` объёмом 36 МБ.
 3. В YDB создана таблица `transactions_v2`.
 4. Данные загружены в таблицу через YDB CLI.
 5. Создан бакет Object Storage.
@@ -17,11 +17,19 @@
 
 ## Структура проекта
 
+<<<<<<< HEAD
 - `scripts/generate_transactions_v2.py` — генератор тестовых данных.
 - `yql/01_create_transactions_v2.yql` — создание таблицы YDB.
 - `yql/02_check_transactions_v2.yql` — проверка количества строк.
 - `docs/report_task_1.md` — отчёт по задаче 1.
 - `screenshots` — скриншоты выполнения.
+=======
+- `task_1/scripts/generate_transactions_v2.py` — генератор тестовых данных.
+- `task_1/yql/01_create_transactions_v2.yql` — создание таблицы YDB.
+- `task_1/yql/02_check_transactions_v2.yql` — проверка количества строк.
+- `task_1/docs/report_task_1.md` — отчёт по задаче 1.
+- `task_1/screenshots/` — скриншоты выполнения.
+>>>>>>> 48f6a27 (Restructure project folders by tasks)
 
 ## Использованные сервисы
 

@@ -1,17 +1,22 @@
-# Large local data files
-data/*.csv
+# large generated data
+task_1/data/*.csv
+task_2/data/*.csv
+task_2/data/*.parquet
+task_3/data/*.json
+task_3/data/*.csv
+task_3/data/*.parquet
 
-# Secrets and tokens
+# secrets
 iam-token.txt
-*.key
 *.json
+*.key
 
-# Python
+# system
+.DS_Store
+Thumbs.db
+
+# python
 __pycache__/
 *.pyc
 .venv/
 venv/
-
-# System files
-.DS_Store
-Thumbs.db
