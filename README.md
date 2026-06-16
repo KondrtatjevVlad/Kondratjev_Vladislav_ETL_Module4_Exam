@@ -29,7 +29,6 @@
 - `task_1/yql/02_check_transactions_v2.yql` — проверка количества строк.
 - `task_1/docs/report_task_1.md` — отчёт по задаче 1.
 - `task_1/screenshots/` — скриншоты выполнения.
->>>>>>> 48f6a27 (Restructure project folders by tasks)
 
 ## Использованные сервисы
 
