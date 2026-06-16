@@ -1,31 +1,32 @@
 # Итоговое ДЗ. Модуль 4. Экзамен ETL
 
-## Студент
-
-Кондратьев Владислав
-
-## Описание
-
-Репозиторий содержит материалы итоговой практической работы по модулю 4 дисциплины ETL-процессы.
-
 ## Задача 1. Yandex Data Transfer: YDB → Object Storage
 
-В рамках задачи выполняется перенос данных из Managed Service for YDB в Yandex Object Storage с использованием Yandex Data Transfer.
+В рамках задачи была реализована загрузка данных `transactions_v2` в Managed Service for YDB и перенос этих данных в Yandex Object Storage с использованием Yandex Data Transfer.
 
-### Что сделано
+## Что сделано
 
-1. Подготовлен генератор тестовых данных `transactions_v2`.
-2. Сгенерирован CSV-файл `transactions_v2.csv` объёмом 36.41 МБ.
-3. Подготовлен YQL-скрипт создания таблицы в YDB.
-4. Подготовлен YQL-скрипт проверки данных.
-5. Далее данные будут загружены в YDB и перенесены в Object Storage через Data Transfer.
+1. Создана база данных Yandex Database / Managed Service for YDB.
+2. Сгенерирован CSV-файл `transactions_v2.csv` объёмом более 30 МБ.
+3. В YDB создана таблица `transactions_v2`.
+4. Данные загружены в таблицу через YDB CLI.
+5. Создан бакет Object Storage.
+6. Созданы endpoint-источник YDB и endpoint-приёмник Object Storage.
+7. Создан и запущен transfer типа Snapshot.
+8. Проверено появление CSV-файла в Object Storage.
 
-### Структура проекта
+## Структура проекта
 
-```text
-scripts/generate_transactions_v2.py       # генератор CSV-файла
-yql/01_create_transactions_v2.yql         # создание таблицы transactions_v2
-yql/02_check_transactions_v2.yql          # проверка количества строк
-docs/                                     # отчёты
-screenshots/                              # скриншоты выполнения
-data/                                     # локальные данные, CSV не хранится в Git
+- `scripts/generate_transactions_v2.py` — генератор тестовых данных.
+- `yql/01_create_transactions_v2.yql` — создание таблицы YDB.
+- `yql/02_check_transactions_v2.yql` — проверка количества строк.
+- `docs/report_task_1.md` — отчёт по задаче 1.
+- `screenshots/` — скриншоты выполнения.
+
+## Использованные сервисы
+
+- Yandex Managed Service for YDB
+- Yandex Object Storage
+- Yandex Data Transfer
+- YDB CLI
+- Yandex Cloud CLI
