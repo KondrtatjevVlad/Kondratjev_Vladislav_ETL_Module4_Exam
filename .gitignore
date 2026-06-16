@@ -1,22 +1,6 @@
-# large generated data
-task_1/data/*.csv
-task_2/data/*.csv
-task_2/data/*.parquet
-task_3/data/*.json
-task_3/data/*.csv
-task_3/data/*.parquet
 
 # secrets
 iam-token.txt
 *.json
 *.key
 
-# system
-.DS_Store
-Thumbs.db
-
-# python
-__pycache__/
-*.pyc
-.venv/
-venv/
