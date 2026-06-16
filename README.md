@@ -7,7 +7,7 @@
 ## Что сделано
 
 1. Создана база данных Yandex Database / Managed Service for YDB.
-2. Сгенерирован CSV-файл `transactions_v2.csv` объёмом 36 МБ.
+2. Сгенерирован CSV-файл `transactions_v2.csv` объёмом 36.4 МБ.
 3. В YDB создана таблица `transactions_v2`.
 4. Данные загружены в таблицу через YDB CLI.
 5. Создан бакет Object Storage.
