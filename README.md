@@ -17,7 +17,6 @@
 
 ## Структура проекта
 
-<<<<<<< HEAD
 - `scripts/generate_transactions_v2.py` — генератор тестовых данных.
 - `yql/01_create_transactions_v2.yql` — создание таблицы YDB.
 - `yql/02_check_transactions_v2.yql` — проверка количества строк.
