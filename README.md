@@ -36,3 +36,18 @@
 - Yandex Data Transfer
 - YDB CLI
 - Yandex Cloud CLI
+
+## Задание 2. Airflow + Yandex Data Processing
+
+Во втором задании был настроен пайплайн обработки данных через Managed Service for Apache Airflow и Yandex Data Processing.
+
+Что сделано:
+
+ - сгенерирован CSV-файл applications_v2.csv на 500000 строк размером 57.10 МБ;
+ - файл загружен в Yandex Object Storage;
+ - подготовлен PySpark-скрипт process_applications.py;
+ - создан Airflow DAG task2_dataproc_airflow_dag.py;
+ - DAG автоматически создаёт временный Data Processing-кластер, запускает PySpark-задачу и удаляет кластер после выполнения;
+ - результат обработки сохранён в Object Storage в формате Parquet.
+
+задание выполнено, DAG успешно отработал.
